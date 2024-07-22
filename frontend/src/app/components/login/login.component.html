@@ -1,0 +1,21 @@
+<div class="login">
+  <form class="login-form">
+    <div class="email-wrapper mb-1">
+      <input
+      type="email"
+      name=""
+      id=""
+      class="rounded-5 form-control email"
+      placeholder="enter email address"
+      [formControl]="email"
+      autocomplete="email"
+      />
+      <div id="passwordHelpBlock" class="form-text text-danger ms-lg-2">
+        <app-error fieldName="email" [formField]="email"></app-error>
+      </div>
+    </div>
+    <button type="button" class="login-button rounded-5 p-1" [disabled]="email.invalid" (click)="verifyAndLogin()">Login</button>
+  </form>
+</div>
+
+<button mat-raised-button (click)="client.requestCode()" hidden #oauth>Login With Google</button>

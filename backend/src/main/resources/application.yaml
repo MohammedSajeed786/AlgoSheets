@@ -1,0 +1,29 @@
+
+
+
+#db
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://AlgoSheets_wavebagcan:54492177ac9861a75e6f559d520382aabcc3b0a8@s5d.h.filess.io:3306/AlgoSheets_wavebagcan
+    username: AlgoSheets_wavebagcan
+    password: 54492177ac9861a75e6f559d520382aabcc3b0a8
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+
+#oauth
+oauth:
+  client:
+    id: ${CLIENT_ID}
+    secret: ${CLIENT_SECRET}
+  redirect:
+    uri: ${REDIRECT_URI}
+
+
+
+#jwt
+jwt:
+  secret: ${SECRET}

@@ -1,0 +1,4 @@
+<div class="error" *ngIf="formField.dirty">
+   <span *ngIf="formField.errors?.['required']">{{fieldName}} is required</span>
+   <span *ngIf="formField.errors?.['email']">invalid email</span>
+</div>

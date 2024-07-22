@@ -1,0 +1,26 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    color: var(--white) !important;
+    box-sizing: border-box !important;
+    background-color: var(--black) !important;
+}
+
+:root {
+    --black: #333333;
+    --dark-sea-green: #3AAFA9;
+    --light-sea-green: #DEF2F1;
+    --white: #FEFFFF;
+}
+
+.form-control:focus {   
+    border-color: var(--dark-sea-green);
+    box-shadow: 0px 0 0 0.1rem var(--dark-sea-green)
+
+}
